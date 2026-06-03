@@ -3,6 +3,8 @@ from datetime import UTC, datetime
 from sqlalchemy import Boolean, DateTime, Integer, String, Text
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 
+from bot.infrastructure.i18n import DEFAULT_LANG
+
 
 def _utcnow() -> datetime:
     return datetime.now(UTC)
@@ -18,7 +20,7 @@ class UserModel(Base):
     telegram_id: Mapped[int] = mapped_column(Integer, primary_key=True)
     username: Mapped[str | None] = mapped_column(String, nullable=True)
     first_name: Mapped[str | None] = mapped_column(String, nullable=True)
-    language: Mapped[str] = mapped_column(String, default="ru", nullable=False)
+    language: Mapped[str] = mapped_column(String, default=DEFAULT_LANG, nullable=False)
     created_at: Mapped[datetime] = mapped_column(DateTime, default=_utcnow)
 
 

@@ -1,14 +1,14 @@
 from telegram import Update
 from telegram.ext import Application, CallbackContext, CallbackQueryHandler
 
-from bot.infrastructure.i18n import t
+from bot.infrastructure.i18n import DEFAULT_LANG, t
 from bot.presentation.helpers import get_services, update_lang_cache
 from bot.presentation.keyboards import language_selection_kb, main_menu_kb
 
 
 async def on_lang_select(update: Update, context: CallbackContext) -> None:
     query = update.callback_query
-    lang = context.user_data.get("lang", "ru")
+    lang = context.user_data.get("lang", DEFAULT_LANG)
     await query.edit_message_text(t("language_select", lang), reply_markup=language_selection_kb())
     await query.answer()
 

@@ -3,7 +3,7 @@ import logging
 from telegram import Update
 from telegram.ext import Application, CallbackContext, CallbackQueryHandler
 
-from bot.infrastructure.i18n import t, tf
+from bot.infrastructure.i18n import DEFAULT_LANG, t, tf
 from bot.presentation.helpers import get_services
 from bot.presentation.keyboards import main_menu_kb, quiz_answer_kb, quiz_next_kb, quiz_result_kb
 
@@ -16,7 +16,7 @@ async def on_quiz_start(update: Update, context: CallbackContext) -> None:
     ud = context.user_data
 
     if ud.get("in_quiz"):
-        lang = ud.get("lang", "ru")
+        lang = ud.get("lang", DEFAULT_LANG)
         await query.answer(t("quiz_already", lang))
         return
 

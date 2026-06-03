@@ -315,8 +315,10 @@ TRANSLATIONS: dict[str, dict[str, str]] = {
     },
 }
 
+DEFAULT_LANG = "ru"
 
-def t(key: str, lang: str = "ru") -> str:
+
+def t(key: str, lang: str = DEFAULT_LANG) -> str:
     """Translate a UI string key to the given language, falling back to English."""
     translations = TRANSLATIONS.get(lang, TRANSLATIONS["en"])
     value = translations.get(key)
@@ -326,7 +328,7 @@ def t(key: str, lang: str = "ru") -> str:
     return TRANSLATIONS["en"].get(key, key)
 
 
-def tf(key: str, lang: str = "ru", **kwargs: str) -> str:
+def tf(key: str, lang: str = DEFAULT_LANG, **kwargs: str) -> str:
     """Translate a UI string with format variables."""
     template = t(key, lang)
     try:

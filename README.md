@@ -34,16 +34,13 @@ literature-history-bot/
 │   ├── config.py            # Pydantic settings
 │   ├── container.py         # DI container
 │   ├── presentation/
-│   │   ├── handlers/        # Aiogram handlers
-│   │   ├── keyboards/       # Inline keyboards
-│   │   ├── callbacks.py     # Callback data classes
-│   │   └── middleware.py    # DI middleware
+│   │   ├── handlers/        # PTB handlers
+│   │   └── keyboards/       # Inline keyboards
 │   ├── application/
 │   │   ├── services/        # Business logic
 │   │   └── dto/             # Data transfer objects
 │   ├── domain/
-│   │   ├── entities/        # Domain entities
-│   │   └── value_objects/   # Value objects
+│   │   └── entities/        # Domain entities
 │   └── infrastructure/
 │       ├── database/         # SQLAlchemy models
 │       ├── repositories/    # Database repositories
@@ -58,7 +55,7 @@ literature-history-bot/
 ## Technologies
 
 - Python 3.14
-- aiogram 3 (Telegram Bot API)
+- python-telegram-bot (Telegram Bot API)
 - SQLite + SQLAlchemy 2.x async
 - pydantic-settings
 - uv (package manager)

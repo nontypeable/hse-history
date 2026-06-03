@@ -20,6 +20,7 @@ from bot.infrastructure.content.en import (
 from bot.infrastructure.content.en import (
     QUIZ_QUESTIONS as QUIZ_QUESTIONS_EN,
 )
+from bot.infrastructure.i18n import DEFAULT_LANG
 
 # Backward-compatible aliases (defaults to English)
 AUTHORS = AUTHORS_EN
@@ -31,7 +32,7 @@ QUIZ_QUESTIONS = QUIZ_QUESTIONS_EN
 QUEST_STAGES = QUEST_STAGES_EN
 
 
-def get_authors(lang: str = "en") -> dict[str, Author]:
+def get_authors(lang: str = DEFAULT_LANG) -> dict[str, Author]:
     if lang == "ru":
         from bot.infrastructure.content.ru import AUTHORS as AUTHORS_RU
 
@@ -39,7 +40,7 @@ def get_authors(lang: str = "en") -> dict[str, Author]:
     return AUTHORS_EN
 
 
-def get_periods(lang: str = "en") -> dict[str, Period]:
+def get_periods(lang: str = DEFAULT_LANG) -> dict[str, Period]:
     if lang == "ru":
         from bot.infrastructure.content.ru import PERIODS as PERIODS_RU
 
@@ -47,7 +48,7 @@ def get_periods(lang: str = "en") -> dict[str, Period]:
     return PERIODS_EN
 
 
-def get_events(lang: str = "en") -> dict[str, Event]:
+def get_events(lang: str = DEFAULT_LANG) -> dict[str, Event]:
     if lang == "ru":
         from bot.infrastructure.content.ru import EVENTS as EVENTS_RU
 
@@ -55,7 +56,7 @@ def get_events(lang: str = "en") -> dict[str, Event]:
     return EVENTS_EN
 
 
-def get_achievements(lang: str = "en") -> dict[str, Achievement]:
+def get_achievements(lang: str = DEFAULT_LANG) -> dict[str, Achievement]:
     if lang == "ru":
         from bot.infrastructure.content.ru import ACHIEVEMENTS as ACHIEVEMENTS_RU
 
@@ -63,7 +64,7 @@ def get_achievements(lang: str = "en") -> dict[str, Achievement]:
     return ACHIEVEMENTS_EN
 
 
-def get_map_places(lang: str = "en") -> dict[str, MapPlace]:
+def get_map_places(lang: str = DEFAULT_LANG) -> dict[str, MapPlace]:
     if lang == "ru":
         from bot.infrastructure.content.ru import MAP_PLACES as MAP_PLACES_RU
 
@@ -71,7 +72,7 @@ def get_map_places(lang: str = "en") -> dict[str, MapPlace]:
     return MAP_PLACES_EN
 
 
-def get_quiz_questions(lang: str = "en") -> list[QuizQuestion]:
+def get_quiz_questions(lang: str = DEFAULT_LANG) -> list[QuizQuestion]:
     if lang == "ru":
         from bot.infrastructure.content.ru import QUIZ_QUESTIONS as QUIZ_QUESTIONS_RU
 
@@ -79,7 +80,7 @@ def get_quiz_questions(lang: str = "en") -> list[QuizQuestion]:
     return QUIZ_QUESTIONS_EN
 
 
-def get_quest_stages(lang: str = "en") -> list[QuestStage]:
+def get_quest_stages(lang: str = DEFAULT_LANG) -> list[QuestStage]:
     if lang == "ru":
         from bot.infrastructure.content.ru import QUEST_STAGES as QUEST_STAGES_RU
 

@@ -11,11 +11,4 @@ class Settings(BaseSettings):
 
 
 def get_settings() -> Settings:
-    import os
-
-    token = os.environ.get("BOT_TOKEN", "")
-    kwargs: dict[str, str] = {"BOT_TOKEN": token}
-    proxy = os.environ.get("PROXY_URL")
-    if proxy:
-        kwargs["PROXY_URL"] = proxy
-    return Settings(**kwargs)
+    return Settings()

@@ -12,10 +12,11 @@ from bot.infrastructure.content import (
     get_map_places,
     get_periods,
 )
+from bot.infrastructure.i18n import DEFAULT_LANG
 
 
 class ContentService:
-    def get_period(self, period_id: str, lang: str = "ru") -> PeriodCard | None:
+    def get_period(self, period_id: str, lang: str = DEFAULT_LANG) -> PeriodCard | None:
         periods = get_periods(lang)
         period = periods.get(period_id)
         if period is None:
@@ -32,7 +33,7 @@ class ContentService:
             achievements=period.achievements,
         )
 
-    def get_all_periods(self, lang: str = "ru") -> list[PeriodCard]:
+    def get_all_periods(self, lang: str = DEFAULT_LANG) -> list[PeriodCard]:
         periods = get_periods(lang)
         return [
             PeriodCard(
@@ -49,7 +50,7 @@ class ContentService:
             for p in periods.values()
         ]
 
-    def get_author(self, author_id: str, lang: str = "ru") -> AuthorCard | None:
+    def get_author(self, author_id: str, lang: str = DEFAULT_LANG) -> AuthorCard | None:
         authors = get_authors(lang)
         author = authors.get(author_id)
         if author is None:
@@ -69,7 +70,7 @@ class ContentService:
             mini_answer=author.mini_answer,
         )
 
-    def get_authors_by_period(self, period_id: str, lang: str = "ru") -> list[AuthorCard]:
+    def get_authors_by_period(self, period_id: str, lang: str = DEFAULT_LANG) -> list[AuthorCard]:
         authors = get_authors(lang)
         return [
             AuthorCard(
@@ -90,7 +91,7 @@ class ContentService:
             if a.period_id == period_id
         ]
 
-    def get_event(self, event_id: str, lang: str = "ru") -> EventCard | None:
+    def get_event(self, event_id: str, lang: str = DEFAULT_LANG) -> EventCard | None:
         events = get_events(lang)
         event = events.get(event_id)
         if event is None:
@@ -108,7 +109,7 @@ class ContentService:
             check_answer=event.check_answer,
         )
 
-    def get_achievement(self, achievement_id: str, lang: str = "ru") -> AchievementCard | None:
+    def get_achievement(self, achievement_id: str, lang: str = DEFAULT_LANG) -> AchievementCard | None:
         achievements = get_achievements(lang)
         achievement = achievements.get(achievement_id)
         if achievement is None:
@@ -124,7 +125,7 @@ class ContentService:
             historical_context=achievement.historical_context,
         )
 
-    def get_all_achievements(self, lang: str = "ru") -> list[AchievementCard]:
+    def get_all_achievements(self, lang: str = DEFAULT_LANG) -> list[AchievementCard]:
         achievements = get_achievements(lang)
         return [
             AchievementCard(
@@ -140,7 +141,7 @@ class ContentService:
             for a in achievements.values()
         ]
 
-    def get_map_place(self, place_id: str, lang: str = "ru") -> MapPlaceCard | None:
+    def get_map_place(self, place_id: str, lang: str = DEFAULT_LANG) -> MapPlaceCard | None:
         places = get_map_places(lang)
         place = places.get(place_id)
         if place is None:
@@ -153,7 +154,7 @@ class ContentService:
             historical_value=place.historical_value,
         )
 
-    def get_all_map_places(self, lang: str = "ru") -> list[MapPlaceCard]:
+    def get_all_map_places(self, lang: str = DEFAULT_LANG) -> list[MapPlaceCard]:
         places = get_map_places(lang)
         return [
             MapPlaceCard(

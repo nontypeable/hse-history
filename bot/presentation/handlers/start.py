@@ -3,7 +3,7 @@ import logging
 from telegram import Update
 from telegram.ext import Application, CallbackContext, CommandHandler, MessageHandler, filters
 
-from bot.infrastructure.i18n import t
+from bot.infrastructure.i18n import DEFAULT_LANG, t
 from bot.presentation.helpers import get_services
 from bot.presentation.keyboards import language_selection_kb, main_menu_kb
 
@@ -19,14 +19,14 @@ async def cmd_start(update: Update, context: CallbackContext) -> None:
             logger.exception("Failed to create user")
 
     if context.user_data.get("lang_set"):
-        lang = context.user_data.get("lang", "ru")
+        lang = context.user_data.get("lang", DEFAULT_LANG)
         await update.message.reply_text(t("welcome", lang), reply_markup=main_menu_kb(lang))
     else:
         await update.message.reply_text(t("language_select"), reply_markup=language_selection_kb())
 
 
 async def fallback_message(update: Update, context: CallbackContext) -> None:
-    lang = context.user_data.get("lang", "ru")
+    lang = context.user_data.get("lang", DEFAULT_LANG)
     await update.message.reply_text(t("fallback", lang))
 
 

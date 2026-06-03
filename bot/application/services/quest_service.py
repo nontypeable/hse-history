@@ -2,7 +2,7 @@ from typing import Any
 
 from bot.application.dto import QuestProgressDTO, QuestStageDTO
 from bot.infrastructure.content import get_quest_stages
-from bot.infrastructure.i18n import t
+from bot.infrastructure.i18n import DEFAULT_LANG, t
 from bot.infrastructure.repositories import QuestProgressRepository
 
 
@@ -10,7 +10,7 @@ class QuestService:
     def __init__(self, quest_progress_repo: QuestProgressRepository) -> None:
         self._quest_progress_repo = quest_progress_repo
 
-    def get_stages(self, lang: str = "ru") -> list[QuestStageDTO]:
+    def get_stages(self, lang: str = DEFAULT_LANG) -> list[QuestStageDTO]:
         stages = get_quest_stages(lang)
         return [
             QuestStageDTO(
@@ -22,7 +22,7 @@ class QuestService:
             for s in stages
         ]
 
-    def get_stage(self, stage_number: int, lang: str = "ru") -> dict[str, Any] | None:
+    def get_stage(self, stage_number: int, lang: str = DEFAULT_LANG) -> dict[str, Any] | None:
         stages = get_quest_stages(lang)
         for stage in stages:
             if stage.stage_number == stage_number:
@@ -37,11 +37,11 @@ class QuestService:
                 }
         return None
 
-    def get_total_stages(self) -> int:
-        return len(get_quest_stages("ru"))
+    def get_total_stages(self, lang: str = DEFAULT_LANG) -> int:
+        return len(get_quest_stages(lang))
 
     def check_stage_answer(
-        self, stage_number: int, question_index: int, answer: str, lang: str = "ru"
+        self, stage_number: int, question_index: int, answer: str, lang: str = DEFAULT_LANG
     ) -> dict[str, Any]:
         stage = self.get_stage(stage_number, lang)
         if stage is None:
@@ -114,7 +114,7 @@ class QuestService:
             is_completed=parsed["is_completed"],
         )
 
-    def get_completion_message(self, collected_keys: list[str], lang: str = "ru") -> str:
+    def get_completion_message(self, collected_keys: list[str], lang: str = DEFAULT_LANG) -> str:
         keys_text = "\n".join(f"  🔑 {key}" for key in collected_keys)
         completion = t("quest_complete", lang)
         key_received = t("quest_keys_collected", lang)

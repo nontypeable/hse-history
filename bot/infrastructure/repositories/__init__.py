@@ -6,6 +6,7 @@ from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from bot.infrastructure.database.models import QuestProgressModel, QuizResultModel, UserModel
+from bot.infrastructure.i18n import DEFAULT_LANG
 
 logger = logging.getLogger(__name__)
 
@@ -34,7 +35,7 @@ class UserRepository:
 
     async def get_language(self, telegram_id: int) -> str:
         user = await self.get(telegram_id)
-        return user.language if user else "ru"
+        return user.language if user else DEFAULT_LANG
 
     async def set_language(self, telegram_id: int, language: str) -> None:
         user = await self.get(telegram_id)

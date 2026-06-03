@@ -4,6 +4,7 @@ from contextlib import asynccontextmanager
 from telegram.ext import CallbackContext
 
 from bot.container import Container
+from bot.infrastructure.i18n import DEFAULT_LANG
 
 ServiceBundle = namedtuple(
     "ServiceBundle",
@@ -21,7 +22,7 @@ async def get_services(context: CallbackContext, user_id: int):
             progress = container.progress_service(session)
             lang = await progress.get_language(user_id)
             if not lang:
-                lang = "ru"
+                lang = DEFAULT_LANG
             context.user_data["lang"] = lang
 
         svc = ServiceBundle(
