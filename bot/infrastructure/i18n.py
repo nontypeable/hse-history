@@ -155,8 +155,8 @@ TRANSLATIONS: dict[str, dict[str, str]] = {
             "• Academic reference materials on Russian literary history\n"
             "• Biographical materials about Russian writers\n"
             "• Works of Russian classical literature\n\n"
-            "👥 Project team:\n"
-            "HSE University student project"
+            "👥 Project team (25KNT6, HSE University):\n"
+            "Andrey Sadkov, Anna Stanovova, Egor Runov, Bogdan Topilin"
         ),
         # Language
         "language_select": "🌐 Choose your language / Выберите язык:",
@@ -322,8 +322,8 @@ TRANSLATIONS: dict[str, dict[str, str]] = {
             "• Академические справочники по истории русской литературы\n"
             "• Биографические материалы о русских писателях\n"
             "• Произведения русской классической литературы\n\n"
-            "👥 Команда проекта:\n"
-            "Студенческий проект НИУ ВШЭ"
+            "👥 Команда проекта (25КНТ6, НИУ ВШЭ):\n"
+            "Садков Андрей, Становова Анна, Рунов Егор, Топилин Богдан"
         ),
         # Language
         "language_select": "🌐 Выберите язык / Choose your language:",
