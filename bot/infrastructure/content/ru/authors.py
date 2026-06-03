@@ -3,7 +3,7 @@ from bot.domain.entities import Author
 AUTHORS: dict[str, Author] = {
     "pushkin": Author(
         id="pushkin",
-        name="Alexander Pushkin",
+        name="Александр Пушкин",
         life_years="1799–1837",
         period_id="golden_age",
         who_they_were="Поэт, драматург, прозаик — основоположник новой русской литературы.",
@@ -33,7 +33,7 @@ AUTHORS: dict[str, Author] = {
     ),
     "lermontov": Author(
         id="lermontov",
-        name="Mikhail Lermontov",
+        name="Михаил Лермонтов",
         life_years="1814–1841",
         period_id="golden_age",
         who_they_were="Поэт, прозаик, драматург — преемник Пушкина, мастер психологической лирики.",
@@ -60,7 +60,7 @@ AUTHORS: dict[str, Author] = {
     ),
     "gogol": Author(
         id="gogol",
-        name="Nikolai Gogol",
+        name="Николай Гоголь",
         life_years="1809–1852",
         period_id="golden_age",
         who_they_were="Прозаик, драматург, сатирик — основатель русской реалистической прозы.",
@@ -90,7 +90,7 @@ AUTHORS: dict[str, Author] = {
     ),
     "griboyedov": Author(
         id="griboyedov",
-        name="Alexander Griboyedov",
+        name="Александр Грибоедов",
         life_years="1795–1829",
         period_id="golden_age",
         who_they_were="Дипломат, драматург, композитор — автор самой цитируемой русской комедии.",
@@ -111,7 +111,7 @@ AUTHORS: dict[str, Author] = {
     ),
     "zhukovsky": Author(
         id="zhukovsky",
-        name="Vasily Zhukovsky",
+        name="Василий Жуковский",
         life_years="1783–1852",
         period_id="golden_age",
         who_they_were="Поэт, переводчик, воспитатель наследника — «отец русского романтизма».",
@@ -132,7 +132,7 @@ AUTHORS: dict[str, Author] = {
     ),
     "turgenev": Author(
         id="turgenev",
-        name="Ivan Turgenev",
+        name="Иван Тургенев",
         life_years="1818–1883",
         period_id="realism",
         who_they_were="Романист, драматург, переводчик — первый русский писатель, широко признанный в Европе.",
@@ -159,7 +159,7 @@ AUTHORS: dict[str, Author] = {
     ),
     "goncharov": Author(
         id="goncharov",
-        name="Ivan Goncharov",
+        name="Иван Гончаров",
         life_years="1812–1891",
         period_id="realism",
         who_they_were="Романист — создатель самого знаменитого ленивца в мировой литературе.",
@@ -180,7 +180,7 @@ AUTHORS: dict[str, Author] = {
     ),
     "dostoevsky": Author(
         id="dostoevsky",
-        name="Fyodor Dostoevsky",
+        name="Фёдор Достоевский",
         life_years="1821–1881",
         period_id="realism",
         who_they_were="Романист, философ, публицист — один из величайших психологических писателей в мировой литературе.",
@@ -210,7 +210,7 @@ AUTHORS: dict[str, Author] = {
     ),
     "tolstoy": Author(
         id="tolstoy",
-        name="Leo Tolstoy",
+        name="Лев Толстой",
         life_years="1828–1910",
         period_id="reforms",
         who_they_were="Романист, философ, моральный авторитет — один из величайших писателей в мировой истории.",
@@ -240,7 +240,7 @@ AUTHORS: dict[str, Author] = {
     ),
     "nekrasov": Author(
         id="nekrasov",
-        name="Nikolai Nekrasov",
+        name="Николай Некрасов",
         life_years="1821–1878",
         period_id="reforms",
         who_they_were="Поэт, издатель — голос русского народа, «крестьянский поэт».",
@@ -269,7 +269,7 @@ AUTHORS: dict[str, Author] = {
     ),
     "ostrovsky": Author(
         id="ostrovsky",
-        name="Alexander Ostrovsky",
+        name="Александр Островский",
         life_years="1823–1886",
         period_id="realism",
         who_they_were="Драматург — создатель русского национального театра.",
@@ -290,7 +290,7 @@ AUTHORS: dict[str, Author] = {
     ),
     "saltykov": Author(
         id="saltykov",
-        name="Mikhail Saltykov-Shchedrin",
+        name="Михаил Салтыков-Щедрин",
         life_years="1826–1889",
         period_id="realism",
         who_they_were="Сатирик, публицист — величайший политический сатирик России.",
@@ -311,7 +311,7 @@ AUTHORS: dict[str, Author] = {
     ),
     "chernyshevsky": Author(
         id="chernyshevsky",
-        name="Nikolai Chernyshevsky",
+        name="Николай Чернышевский",
         life_years="1828–1889",
         period_id="reforms",
         who_they_were="Философ, критик, революционер — автор «Что делать?».",
@@ -332,7 +332,7 @@ AUTHORS: dict[str, Author] = {
     ),
     "chekhov": Author(
         id="chekhov",
-        name="Anton Chekhov",
+        name="Антон Чехов",
         life_years="1860–1904",
         period_id="chekhov",
         who_they_were="Рассказчик, драматург, врач — мастер подтекста и недосказанности.",
@@ -359,7 +359,7 @@ AUTHORS: dict[str, Author] = {
     ),
     "korolenko": Author(
         id="korolenko",
-        name="Vladimir Korolenko",
+        name="Владимир Короленко",
         life_years="1853–1921",
         period_id="chekhov",
         who_they_were="Писатель, публицист, гуманист — совесть русской литературы.",
@@ -380,7 +380,7 @@ AUTHORS: dict[str, Author] = {
     ),
     "gorky": Author(
         id="gorky",
-        name="Maxim Gorky",
+        name="Максим Горький",
         life_years="1868–1936",
         period_id="chekhov",
         who_they_were="Романист, драматург, общественный деятель — основоположник социалистического реализма.",
@@ -401,7 +401,7 @@ AUTHORS: dict[str, Author] = {
     ),
     "andreev": Author(
         id="andreev",
-        name="Leonid Andreev",
+        name="Леонид Андреев",
         life_years="1871–1919",
         period_id="chekhov",
         who_they_were="Писатель, драматург — мастер психологического ужаса и экзистенциальной тоски.",
@@ -422,7 +422,7 @@ AUTHORS: dict[str, Author] = {
     ),
     "blok": Author(
         id="blok",
-        name="Alexander Blok",
+        name="Александр Блок",
         life_years="1880–1921",
         period_id="silver_age",
         who_they_were="Поэт — величайший лирический поэт Серебряного века.",
@@ -443,7 +443,7 @@ AUTHORS: dict[str, Author] = {
     ),
     "akhmatova": Author(
         id="akhmatova",
-        name="Anna Akhmatova",
+        name="Анна Ахматова",
         life_years="1889–1966",
         period_id="silver_age",
         who_they_were="Поэт — голос русского страдания и стойкости в XX веке.",
@@ -467,7 +467,7 @@ AUTHORS: dict[str, Author] = {
     ),
     "gumilev": Author(
         id="gumilev",
-        name="Nikolai Gumilev",
+        name="Николай Гумилёв",
         life_years="1886–1921",
         period_id="silver_age",
         who_they_were="Поэт, исследователь, основатель акмеизма — романтический авантюрист русской поэзии.",
@@ -488,7 +488,7 @@ AUTHORS: dict[str, Author] = {
     ),
     "tsvetaeva": Author(
         id="tsvetaeva",
-        name="Marina Tsvetaeva",
+        name="Марина Цветаева",
         life_years="1892–1941",
         period_id="silver_age",
         who_they_were="Поэт — один из величайших лирических голосов на любом языке.",
@@ -509,7 +509,7 @@ AUTHORS: dict[str, Author] = {
     ),
     "mayakovsky": Author(
         id="mayakovsky",
-        name="Vladimir Mayakovsky",
+        name="Владимир Маяковский",
         life_years="1893–1930",
         period_id="silver_age",
         who_they_were="Поэт, художник, агитатор — взрывной голос русского футуризма.",
@@ -530,7 +530,7 @@ AUTHORS: dict[str, Author] = {
     ),
     "bryusov": Author(
         id="bryusov",
-        name="Valery Bryusov",
+        name="Валерий Брюсов",
         life_years="1873–1924",
         period_id="silver_age",
         who_they_were="Поэт, критик, переводчик — основоположник русского символизма.",
@@ -551,7 +551,7 @@ AUTHORS: dict[str, Author] = {
     ),
     "bely": Author(
         id="bely",
-        name="Andrei Bely",
+        name="Андрей Белый",
         life_years="1880–1934",
         period_id="silver_age",
         who_they_were="Романист, поэт, теоретик — создатель русского литературного модернизма.",
@@ -572,7 +572,7 @@ AUTHORS: dict[str, Author] = {
     ),
     "yesenin": Author(
         id="yesenin",
-        name="Sergei Yesenin",
+        name="Сергей Есенин",
         life_years="1895–1925",
         period_id="silver_age",
         who_they_were="Поэт — «крестьянский поэт» и самый лирический голос русской деревни.",

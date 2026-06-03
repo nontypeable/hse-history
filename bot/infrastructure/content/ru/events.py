@@ -20,7 +20,7 @@ EVENTS: dict[str, Event] = {
             "и «Войну и мир» Толстого. Она создала представление о русском народе как исторической силе."
         ),
         related_author_ids=["pushkin", "lermontov", "tolstoy"],
-        related_works=["War and Peace", "Borodino (Pushkin)", "Borodino (Lermontov)"],
+        related_works=["Война и мир", "Бородино (Пушкин)", "Бородино (Лермонтов)"],
         check_question="Какой крупный роман был вдохновлён войной 1812 года?",
         check_answer="«Война и мир» Толстого — война занимает центральное место в осмыслении романом истории и национальной идентичности.",
     ),
@@ -44,7 +44,7 @@ EVENTS: dict[str, Event] = {
             "Николая I."
         ),
         related_author_ids=["pushkin", "lermontov"],
-        related_works=["Death of a Poem (Lermontov)", "Pushkin's exile poetry"],
+        related_works=["Смерть поэта (Лермонтов)", "Стихи ссылки (Пушкин)"],
         check_question="Почему многие декабристы были друзьями Пушкина?",
         check_answer="Потому что они были молодыми дворянами, воспитанными в том же либеральном духе — среди восставших были однокурсники Пушкина по Царскосельскому лицею.",
     ),
@@ -68,7 +68,7 @@ EVENTS: dict[str, Event] = {
             "«Отцы и дети» драматизировали этот конфликт."
         ),
         related_author_ids=["turgenev", "dostoevsky", "chernyshevsky"],
-        related_works=["Fathers and Sons (Turgenev)", "Philosophical Letters (Chaadayev)"],
+        related_works=["Отцы и дети (Тургенев)", "Философические письма (Чаадаев)"],
         check_question="В чём состоял главный вопрос спора западников и славянофилов?",
         check_answer="Должна ли Россия следовать европейскому пути развития, или у неё есть свой особый путь?",
     ),
@@ -91,7 +91,7 @@ EVENTS: dict[str, Event] = {
             "этой эпохи."
         ),
         related_author_ids=["tolstoy", "dostoevsky", "nekrasov", "chernyshevsky", "turgenev"],
-        related_works=["Fathers and Sons (Turgenev)", "What Is to Be Done? (Chernyshevsky)"],
+        related_works=["Отцы и дети (Тургенев)", "Что делать? (Чернышевский)"],
         check_question="Почему Александра II называли «Царём-Освободителем»?",
         check_answer="Потому что он освободил 23 миллиона крепостных крестьян в 1861 году — это была крупнейшая мирная социальная трансформация в европейской истории.",
     ),
@@ -113,7 +113,7 @@ EVENTS: dict[str, Event] = {
             "поэзии Некрасова о крестьянской жизни и «Отцов и детей» Тургенева."
         ),
         related_author_ids=["tolstoy", "nekrasov", "turgenev"],
-        related_works=["Anna Karenina (Tolstoy)", "Who Can Be Happy and Free in Russia? (Nekrasov)"],
+        related_works=["Анна Каренина (Толстой)", "Кому на Руси жить хорошо (Некрасов)"],
         check_question="Почему отмена крепостного права не решила крестьянский вопрос полностью?",
         check_answer="Потому что крестьяне получили слишком мало земли и были обязаны выплачивать выкупные платежи — «земельный вопрос» остался нерешённым.",
     ),
@@ -135,7 +135,7 @@ EVENTS: dict[str, Event] = {
             "и повлияло на поэзию Некрасова и политические сочинения Чернышевского."
         ),
         related_author_ids=["turgenev", "nekrasov", "chernyshevsky"],
-        related_works=["Virgin Soil (Turgenev)", "Who Can Be Happy and Free in Russia? (Nekrasov)"],
+        related_works=["Новь (Тургенев)", "Кому на Руси жить хорошо (Некрасов)"],
         check_question="Что такое «хождение в народ» (народничество)?",
         check_answer="Тысячи студентов отправились жить среди крестьян в 1874 году, надеясь их просветить, — но крестьяне по большей части выдали их полиции.",
     ),
@@ -157,7 +157,7 @@ EVENTS: dict[str, Event] = {
             "отбросило тень на всю литературу конца XIX века."
         ),
         related_author_ids=["dostoevsky", "tolstoy"],
-        related_works=["Demons (Dostoevsky)"],
+        related_works=["Бесы (Достоевский)"],
         check_question="В чём трагическая ирония времени убийства Александра II?",
         check_answer="Он был убит в тот самый день, когда одобрил проект конституционной реформы — реформы, которая могла бы предотвратить дальнейшие революции.",
     ),
@@ -179,7 +179,7 @@ EVENTS: dict[str, Event] = {
             "а Чехов — о провинциальном среднем классе, застрявшем между старым и новым мирами."
         ),
         related_author_ids=["gorky", "andreev", "chekhov"],
-        related_works=["The Lower Depths (Gorky)", "Red Laugh (Andreev)"],
+        related_works=["На дне (Горький)", "Красный смех (Андреев)"],
         check_question="Как индустриализация изменила русскую литературу?",
         check_answer="Она принесла новые темы — городскую бедноту, тревогу современной городской жизни и провинциальный средний класс, оказавшийся между старым и новым.",
     ),
@@ -202,7 +202,7 @@ EVENTS: dict[str, Event] = {
             "революционного террора."
         ),
         related_author_ids=["blok", "mayakovsky", "gorky", "bely"],
-        related_works=["The Twelve (Blok)", "Petersburg (Bely)"],
+        related_works=["Двенадцать (Блок)", "Петербург (Белый)"],
         check_question="Почему революцию 1905 года назвали «генеральной репетицией»?",
         check_answer="Потому что она показала, что самодержавие можно оспорить, создала Думу и предвосхитила напряжения, которые взорвутся в 1917 году.",
     ),
@@ -224,7 +224,7 @@ EVENTS: dict[str, Event] = {
             "запечатлела первоначальный патриотизм. Гумилёв воевал на фронте."
         ),
         related_author_ids=["mayakovsky", "blok", "akhmatova", "gumilev"],
-        related_works=["A Cloud in Trousers (Mayakovsky)", "Retribution (Blok)"],
+        related_works=["Облако в штанах (Маяковский)", "Возмездие (Блок)"],
         check_question="Как Первая мировая война повлияла на поэтов Серебряного века?",
         check_answer="Она разрушила их первоначальный идеализм — Маяковский и Блок писали об ужасах войны, Гумилёв сражался на фронте, а Ахматова запечатлела первоначальный патриотизм.",
     ),
@@ -246,7 +246,7 @@ EVENTS: dict[str, Event] = {
             "и многие другие столкнулись с преследованиями. Серебряный век фактически завершился."
         ),
         related_author_ids=["blok", "akhmatova", "tsvetaeva", "mayakovsky", "gorky"],
-        related_works=["The Twelve (Blok)", "Requiem (Akhmatova)"],
+        related_works=["Двенадцать (Блок)", "Реквием (Ахматова)"],
         check_question="Что означали революции 1917 года для Серебряного века?",
         check_answer="Они положили ему конец. Мир, о котором писали Блок, Ахматова и Цветаева, был уничтожен — одни эмигрировали, другие были подавлены, третьи пытались адаптироваться.",
     ),

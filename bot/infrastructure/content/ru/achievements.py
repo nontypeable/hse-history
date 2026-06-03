@@ -15,7 +15,7 @@ ACHIEVEMENTS: dict[str, Achievement] = {
             "позволил всем последующим русским писателям выражать сложные идеи на русском языке."
         ),
         related_author_ids=["pushkin", "gogol", "lermontov"],
-        related_works=["Eugene Onegin (Pushkin)", "The Government Inspector (Gogol)"],
+        related_works=["Евгений Онегин (Пушкин)", "Ревизор (Гоголь)"],
         historical_context=(
             "Спор о том, пригоден ли русский язык для высокой литературы, длился десятилетиями. "
             "Творчество Пушкина решило его окончательно."
@@ -35,7 +35,7 @@ ACHIEVEMENTS: dict[str, Achievement] = {
             "свободу, веру, справедливость, смысл жизни — и при этом оставаться великим искусством."
         ),
         related_author_ids=["tolstoy", "dostoevsky", "turgenev"],
-        related_works=["War and Peace", "Crime and Punishment", "Fathers and Sons"],
+        related_works=["Война и мир", "Преступление и наказание", "Отцы и дети"],
         historical_context=(
             "Великие реформы создали публику, жаждущую ответов о будущем России. "
             "Роман стал тем средством, через которое эти ответы формулировались."
@@ -55,7 +55,7 @@ ACHIEVEMENTS: dict[str, Achievement] = {
             "повлияли на Фрейда, Пруста, Фолкнера и всю традицию психологического реализма."
         ),
         related_author_ids=["dostoevsky", "tolstoy", "chekhov", "lermontov"],
-        related_works=["Crime and Punishment", "Anna Karenina", "The Death of Ivan Ilyich"],
+        related_works=["Преступление и наказание", "Анна Каренина", "Смерть Ивана Ильича"],
         historical_context=(
             "Сложность русского общества — его противоречия, реформы и кризисы — "
             "требовала психологически сложных персонажей, а не просто добрых или злых."
@@ -75,9 +75,9 @@ ACHIEVEMENTS: dict[str, Achievement] = {
         ),
         related_author_ids=["gogol", "nekrasov", "saltykov", "turgenev"],
         related_works=[
-            "Dead Souls (Gogol)",
-            "The Government Inspector (Gogol)",
-            "Who Can Be Happy and Free? (Nekrasov)",
+            "Мёртвые души (Гоголь)",
+            "Ревизор (Гоголь)",
+            "Кому на Руси жить хорошо (Некрасов)",
         ],
         historical_context=(
             "Цензура делала прямую политическую критику невозможной, поэтому писатели "
@@ -97,7 +97,7 @@ ACHIEVEMENTS: dict[str, Achievement] = {
             "что они говорят — стал основой современного театра, от Станиславского до наших дней."
         ),
         related_author_ids=["chekhov", "ostrovsky", "gorky"],
-        related_works=["The Cherry Orchard (Chekhov)", "The Seagull (Chekhov)", "The Storm (Ostrovsky)"],
+        related_works=["Вишнёвый сад (Чехов)", "Чайка (Чехов)", "Гроза (Островский)"],
         historical_context=(
             "До Островского русский театр был заполнен французскими и немецкими пьесами. "
             "Чехов затем повёл драму в совершенно новом направлении."
@@ -117,7 +117,7 @@ ACHIEVEMENTS: dict[str, Achievement] = {
             "и экспериментальной, как любая в Европе — а иногда и более."
         ),
         related_author_ids=["blok", "akhmatova", "mayakovsky", "tsvetaeva", "gumilev", "bryusov", "bely", "yesenin"],
-        related_works=["The Twelve (Blok)", "Requiem (Akhmatova)", "A Cloud in Trousers (Mayakovsky)"],
+        related_works=["Двенадцать (Блок)", "Реквием (Ахматова)", "Облако в штанах (Маяковский)"],
         historical_context=(
             "Кризис Российской империи, Революция 1905 года и надвигающаяся катастрофа "
             "1917 года создали давление, породившее выдающуюся поэзию."
@@ -137,7 +137,7 @@ ACHIEVEMENTS: dict[str, Achievement] = {
             "и предложением того, как литература должна взаимодействовать с действительностью."
         ),
         related_author_ids=["pushkin", "tolstoy", "blok", "gumilev", "mayakovsky"],
-        related_works=["Eugene Onegin (Pushkin)", "The Twelve (Blok)", "A Cloud in Trousers (Mayakovsky)"],
+        related_works=["Евгений Онегин (Пушкин)", "Двенадцать (Блок)", "Облако в штанах (Маяковский)"],
         historical_context=(
             "Каждое течение возникло в конкретный исторический момент: романтизм — из эпохи декабристов, "
             "реализм — из Великих реформ, а течения Серебряного века — из кризиса самодержавия."
@@ -158,7 +158,7 @@ ACHIEVEMENTS: dict[str, Achievement] = {
             "и Мураками признают свой долг перед русским романом."
         ),
         related_author_ids=["tolstoy", "dostoevsky", "chekhov", "pushkin"],
-        related_works=["War and Peace", "Crime and Punishment", "The Cherry Orchard"],
+        related_works=["Война и мир", "Преступление и наказание", "Вишнёвый сад"],
         historical_context=(
             "Переводы конца XIX и XX веков принесли русскую литературу мировой аудитории. "
             "Её сочетание философской глубины и человеческого сочувствия "
