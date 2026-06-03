@@ -227,3 +227,27 @@ def quest_back_to_stage_kb(stage_number: int, lang: str = DEFAULT_LANG) -> Inlin
             [InlineKeyboardButton(text=t("back_main", lang), callback_data="main_menu")],
         ]
     )
+
+
+def period_quiz_answer_kb(period_id: str, question_idx: int, options: list[str]) -> InlineKeyboardMarkup:
+    buttons = []
+    for i, option in enumerate(options):
+        buttons.append(
+            [InlineKeyboardButton(text=option.strip(), callback_data=f"pq_a:{period_id}:{question_idx}:{i}")]
+        )
+    return InlineKeyboardMarkup(buttons)
+
+
+def period_quiz_next_kb(period_id: str, question_idx: int, lang: str = DEFAULT_LANG) -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        [[InlineKeyboardButton(text=t("period_quiz_next", lang), callback_data=f"pq_next:{period_id}:{question_idx}")]]
+    )
+
+
+def period_quiz_result_kb(period_id: str, lang: str = DEFAULT_LANG) -> InlineKeyboardMarkup:
+    return InlineKeyboardMarkup(
+        [
+            [InlineKeyboardButton(text=t("back_periods", lang), callback_data="period:list")],
+            [InlineKeyboardButton(text=t("back_main", lang), callback_data="main_menu")],
+        ]
+    )

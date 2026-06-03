@@ -29,6 +29,7 @@ class Period:
     author_ids: list[str]
     event_ids: list[str]
     achievements: list[str]
+    questions: list[dict[str, str]]
 
 
 @dataclass(frozen=True)

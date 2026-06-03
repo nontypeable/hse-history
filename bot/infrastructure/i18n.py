@@ -77,7 +77,6 @@ TRANSLATIONS: dict[str, dict[str, str]] = {
         "map_authors": "👤 Related authors:",
         "map_value": "📜 Historical and cultural value:",
         # Quiz
-        "quiz_redirect": "This feature redirects you to the main quiz. Use the 🧠 Quiz button from the main menu for a full quiz!",
         "quiz_start": "🧠 Quiz — Question {num} of {total}\n\n{question}",
         "quiz_already": "You are already in a quiz! Answer the current question.",
         "quiz_no_questions": "No quiz questions available.",
@@ -93,6 +92,17 @@ TRANSLATIONS: dict[str, dict[str, str]] = {
         "quiz_level_mid": "Not bad, but there are gaps. 📖",
         "quiz_level_high": "Excellent result! 🎓",
         "quiz_level_max": "Brilliant! You are almost a literary historian! 🏆",
+        # Period quiz
+        "period_quiz_title": "📝 Mini-quiz: {title}",
+        "period_quiz_question": "Question {num} of {total}",
+        "period_quiz_correct": "✅ Correct!",
+        "period_quiz_wrong": "❌ Wrong!",
+        "period_quiz_correct_answer": "\n\nCorrect answer: {answer}",
+        "period_quiz_score": "You answered {score} out of {total} correctly.",
+        "period_quiz_result_low": "You should review this period. 📚",
+        "period_quiz_result_mid": "Not bad, but there are gaps. 📖",
+        "period_quiz_result_high": "Excellent result! 🎓",
+        "period_quiz_next": "➡️ Next question",
         # Quest
         "quest_intro": (
             "🎮 Interactive Quest: Journey through Literary Russia\n\n"
@@ -234,7 +244,6 @@ TRANSLATIONS: dict[str, dict[str, str]] = {
         "map_authors": "👤 Связанные авторы:",
         "map_value": "📜 Историческая и культурная ценность:",
         # Quiz
-        "quiz_redirect": "Эта функция перенаправляет вас к основной викторине. Используйте кнопку 🧠 Викторина в главном меню!",
         "quiz_start": "🧠 Викторина — Вопрос {num} из {total}\n\n{question}",
         "quiz_already": "Вы уже в викторине! Ответьте на текущий вопрос.",
         "quiz_no_questions": "Вопросы для викторины недоступны.",
@@ -250,6 +259,17 @@ TRANSLATIONS: dict[str, dict[str, str]] = {
         "quiz_level_mid": "Неплохо, но есть пробелы. 📖",
         "quiz_level_high": "Отличный результат! 🎓",
         "quiz_level_max": "Блестяще! Вы почти литературный историк! 🏆",
+        # Period quiz
+        "period_quiz_title": "📝 Мини-тест: {title}",
+        "period_quiz_question": "Вопрос {num} из {total}",
+        "period_quiz_correct": "✅ Правильно!",
+        "period_quiz_wrong": "❌ Неправильно!",
+        "period_quiz_correct_answer": "\n\nПравильный ответ: {answer}",
+        "period_quiz_score": "Вы ответили правильно на {score} из {total} вопросов.",
+        "period_quiz_result_low": "Стоит повторить материал этой эпохи. 📚",
+        "period_quiz_result_mid": "Неплохо, но есть пробелы. 📖",
+        "period_quiz_result_high": "Отличный результат! 🎓",
+        "period_quiz_next": "➡️ Следующий вопрос",
         # Quest
         "quest_intro": (
             "🎮 Интерактивный квест: Путешествие по литературной России\n\n"

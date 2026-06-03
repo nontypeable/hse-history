@@ -27,6 +27,33 @@ PERIODS: dict[str, Period] = {
             "Development of poem, verse novel, comedy, and prose tale",
             '"Superfluous man" archetype',
         ],
+        questions=[
+            {
+                "question": "Why is Pushkin called the 'sun of Russian poetry'?",
+                "options": "He wrote about the sun; He created the modern Russian literary language; He was a noble; He lived in the south",
+                "answer": "He created the modern Russian literary language",
+            },
+            {
+                "question": "What event of 1825 defined the Golden Age's political context?",
+                "options": "The Emancipation Reform; The Decembrist revolt; The Crimean War; The October Revolution",
+                "answer": "The Decembrist revolt",
+            },
+            {
+                "question": "Which literary type did Lermontov create in 'A Hero of Our Time'?",
+                "options": "The superfluous man; The nihilist; Oblomov; The new person",
+                "answer": "The superfluous man",
+            },
+            {
+                "question": "What did Gogol's 'The Overcoat' give rise to in Russian literature?",
+                "options": "Romantic poetry; The 'overcoat' tradition of social prose; Symbolist movement; Futurism",
+                "answer": "The 'overcoat' tradition of social prose",
+            },
+            {
+                "question": "What makes Griboyedov's 'Woe from Wit' unique in Russian culture?",
+                "options": "It was the first novel; Its phrases entered everyday speech as proverbs; It was banned; It was written in French",
+                "answer": "Its phrases entered everyday speech as proverbs",
+            },
+        ],
     ),
     "realism": Period(
         id="realism",
@@ -53,6 +80,28 @@ PERIODS: dict[str, Period] = {
             "Image of the intelligentsia",
             "Literature as public debate",
         ],
+        questions=[
+            {
+                "question": "What concept did Turgenev's 'Fathers and Sons' introduce to Russian culture?",
+                "options": "The superfluous man; Nihilism; Oblomovism; Narodnichestvo",
+                "answer": "Nihilism",
+            },
+            {
+                "question": "What philosophical question is central to Dostoevsky's work?",
+                "options": "How to write better novels; Whether suffering or freedom defines humanity; How to build a utopia; Whether Russia should industrialize",
+                "answer": "Whether suffering or freedom defines humanity",
+            },
+            {
+                "question": "What social phenomenon does 'Oblomovism' describe?",
+                "options": "Revolutionary activity; Noble apathy and inability to act; Industrial growth; Military reform",
+                "answer": "Noble apathy and inability to act",
+            },
+            {
+                "question": "What did Ostrovsky create for Russian culture?",
+                "options": "The first Russian novel; The national theater repertoire; The first newspaper; The first university",
+                "answer": "The national theater repertoire",
+            },
+        ],
     ),
     "reforms": Period(
         id="reforms",
@@ -76,6 +125,23 @@ PERIODS: dict[str, Period] = {
             "Stronger social criticism",
             "The people as a central topic",
             "Moral and political questions",
+        ],
+        questions=[
+            {
+                "question": "Why was Alexander II called the 'Tsar-Liberator'?",
+                "options": "He freed political prisoners; He emancipated 23 million serfs; He ended censorship; He gave Russia a constitution",
+                "answer": "He emancipated 23 million serfs",
+            },
+            {
+                "question": "What is 'narodnichestvo' (going to the people)?",
+                "options": "Peasants moving to cities; Students going to live among peasants; A literary movement; A military campaign",
+                "answer": "Students going to live among peasants",
+            },
+            {
+                "question": "What did Nekrasov bring to Russian poetry?",
+                "options": "Romanticism; The voice of the people and peasant suffering; Futurism; Symbolism",
+                "answer": "The voice of the people and peasant suffering",
+            },
         ],
     ),
     "chekhov": Period(
@@ -102,6 +168,23 @@ PERIODS: dict[str, Period] = {
             "Rejection of direct moralizing",
             "Image of the crisis of the old world",
         ],
+        questions=[
+            {
+                "question": "What did Chekhov change in drama?",
+                "options": "He added more monologues; He replaced direct conflict with subtext; He removed all dialogue; He wrote only tragedies",
+                "answer": "He replaced direct conflict with subtext",
+            },
+            {
+                "question": "What does 'Gorky' mean and why did he choose this pen name?",
+                "options": "It means 'happy'; It means 'bitter' — reflecting his view of life; It means 'strong'; It was his mother's maiden name",
+                "answer": "It means 'bitter' — reflecting his view of life",
+            },
+            {
+                "question": "What literary movement did Andreev anticipate?",
+                "options": "Romanticism; Realism; Expressionism; Classicism",
+                "answer": "Expressionism",
+            },
+        ],
     ),
     "silver_age": Period(
         id="silver_age",
@@ -126,6 +209,28 @@ PERIODS: dict[str, Period] = {
             "Experiments with language and form",
             "Connection between art, philosophy, and politics",
             "Avant-garde literature",
+        ],
+        questions=[
+            {
+                "question": "What did Acmeism propose instead of Symbolism?",
+                "options": "More mysticism; Clarity and precision; Political revolution; Religious themes",
+                "answer": "Clarity and precision",
+            },
+            {
+                "question": "How did Akhmatova preserve 'Requiem' during the terror?",
+                "options": "She published it abroad; She and friends memorized it, then burned the paper; She hid it in a wall; She wrote it in invisible ink",
+                "answer": "She and friends memorized it, then burned the paper",
+            },
+            {
+                "question": "What was Mayakovsky's 'stepladder' verse?",
+                "options": "A visual arrangement of lines in a staircase pattern; A type of sonnet; A military march rhythm; A way to write novels",
+                "answer": "A visual arrangement of lines in a staircase pattern",
+            },
+            {
+                "question": "What did the 1917 revolutions mean for the Silver Age?",
+                "options": "They had no effect; They ended it; They started it; They improved it",
+                "answer": "They ended it",
+            },
         ],
     ),
 }

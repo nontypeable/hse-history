@@ -31,6 +31,7 @@ class ContentService:
             author_ids=period.author_ids,
             event_ids=period.event_ids,
             achievements=period.achievements,
+            questions=period.questions,
         )
 
     def get_all_periods(self, lang: str = DEFAULT_LANG) -> list[PeriodCard]:
@@ -46,6 +47,7 @@ class ContentService:
                 author_ids=p.author_ids,
                 event_ids=p.event_ids,
                 achievements=p.achievements,
+                questions=p.questions,
             )
             for p in periods.values()
         ]
